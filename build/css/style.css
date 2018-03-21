@@ -1,0 +1,208 @@
+@charset "UTF-8";
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: lato, sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+  height: 2000px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+span {
+  color: black;
+  font: bold 1em/1.5 'Fjalla One', sans-serif;
+  border-bottom: 4px solid black;
+  -webkit-transition: .2s;
+  margin-top: 350px;
+}
+
+span:hover {
+  color: hotPink;
+  cursor: pointer;
+}
+
+@media (-webkit-min-device-pixel-ratio: 0) {
+  span {
+    background-color: black;
+    background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .1s .2s;
+    -webkit-background-clip: text;
+  }
+  span:hover {
+    background-position: 0 0;
+    color: transparent;
+    -webkit-transition: .4s 0;
+    transition: .4s 0;
+  }
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 600px;
+  background: url(/img/tobias-van-schneider-230171-unsplash.jpg) no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 150px;
+}
+
+h1 {
+  position: relative;
+  font-family: cardo, serif;
+  font-size: 2.6em;
+  font-weight: 700;
+  color: #333333;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.66em;
+}
+
+h1:after {
+  content: '†';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+p {
+  font-size: 1.2em;
+  color: #333333;
+}
+
+.my_work a {
+  display: inline-block;
+  position: relative;
+  color: #333333;
+  text-decoration: none;
+  padding: 0.2em 0.05em;
+  border-bottom: 2px solid #333333;
+}
+
+.my_work a:hover {
+  color: #efefef;
+}
+
+.my_work a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #333333;
+  z-index: -1;
+  -webkit-transition: all 0.1s cubic-bezier(0, 0.59, 1, 0.26);
+  transition: all 0.1s cubic-bezier(0, 0.59, 1, 0.26);
+}
+
+.my_work a:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #333333;
+  z-index: -1;
+}
+
+.my_work {
+  margin-top: 100px;
+}
+
+/* 
+    .container{
+      width: 1000px;
+ 
+ 
+  
+ }  */
+.nav {
+  height: 499px;
+}
+
+.nav .nav_menu {
+  margin-top: 370px;
+  width: 100%;
+  height: 50px;
+}
+
+.nav .nav_menu a {
+  color: white;
+  font: bold 1.3em/1.5 'Fjalla One', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: .2s;
+}
+
+.nav .nav_menu a:hover {
+  color: hotPink;
+}
+
+@media (-webkit-min-device-pixel-ratio: 0) {
+  .nav .nav_menu a {
+    background-color: white;
+    background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .1s .2s;
+    -webkit-background-clip: text;
+  }
+  .nav .nav_menu a:hover {
+    background-position: 0 0;
+    color: transparent;
+    -webkit-transition: .4s 0;
+    transition: .4s 0;
+  }
+}
+
+.language-select {
+  color: white;
+  list-style-type: none;
+}
+
+.header_futer {
+  width: 100%;
+  height: 110px;
+  background: #161616;
+}
+
+.feedback_form {
+  height: 600px;
+  background: #000;
+}
+
+li {
+  list-style-type: none;
+}

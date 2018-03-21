@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<title>SEO, SEM and Content Marketing Services | Digital Support Agency</title>
+<meta name="description" content="Global Digital Agency, specialising in SEO, SEM, and Content Marketing. Straight to the point, clear pricing packages. Let's get your business found online." />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Raleway:300,400,400i,500,600,700,700i,800,900|Roboto:300,400,400i,500,700,700i,900" rel="stylesheet">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css?v=0.13">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+ <header class="">
+    <ul class="language-select"> 
+      <li class="active" data-lang="ua">Ukr</li>
+      <li data-lang="en">Eng</li>
+    </ul>
+ <div class="nav container" >
+ 
+ 	<ul class=" row   nav_menu link-effect-5 " ng-app="app" ng-controller="mainController as ctrl">
+ 		<li class="col"><a id="link1" class="button button-2 magic" href="#">About me</a></li>
+ 		<li class="col"><a id="link1" class="button button-2 magic" href="#">My work</a></li>
+ 		<li class="col"><a id="link1" class="button button-2 magic" href="#">Message to me</a></li>
+ 		<li class="col"><a id="link1" class="button button-2 magic" href="#">Contacts</a></li>
+ 		<li class="col"><a id="link1" class="button button-2 magic" href="#">Blog</a></li>
+ 
+ 	</ul>
+ </div>	
+	
+ </header>
+ 
+
+<div class="container-fluid ">
+<div class="container ">
+	
+	
+	  <h1>Hi everyone, My name is <span>Eugene</span>, I'm a front-end developer</h1>
+	  <h2>Worked freelancing from 2015 to 2017</h2>
+	  <h4> Skills, html5/css3, bootstrap-4,
+	sass, gulp, npm, js(es5-es6), git.</h4> 
+	   <section class="my_work">
+	   	<h2>My works</h2>
+	   	
+	   	<p>Adaptive website for pharmacy, using bootstrap  <a id="link" href="propapteca/index.html" title="Адаптивная верстка, css/html, bootstrap 4, js">Propapteca</a></p>
+	   
+		<p>Adaptive website for a metallurgical company, using a bootstrap <a id="link" href="http://www.mkpometall.ru/"  title="Адаптивная верстка, css/html, bootstrap 4, js">Mkpo</a></p>
+		<p>Training website for practice with a beautiful slider  <a id="link" href="home/index.html" title="Верстка, css/html, js">Home</a></p>
+		<p>Training site for practice with interesting design  <a id="link" href="barbershop/index.html" title="Верстка, css/html, js">Barbershop</a></p>
+		<p>Order completed!Adaptive website of the for the festival of crypto-currencies  <a id="link" href="criptofest/index.html" title="Адаптивная верстка, css/html, bootstrap 4, js">Criptofest</a></p>
+		<p>Example of a simple slider "slick"  <a id="link" href="blagoyart/index.html"  title="Верстка, css/html, js">Blagoyart</a></p>
+		<p>Web application using canvas  <a id="link" href="DragNdrope.html"  title="js canvas">Drag'N'Drop</a></p>
+		<p>Favorite game of all novice programmers  <a id="link" href="life.html" title="js, canvas">Life</a></p>
+		
+		<p>The word filter is written in pure  <a id="link" href="filtr.html" title="js">Filter on javaScript</a></p>
+		<p>Web application for drawing on canvas  <a id="link" href="paint.html" title="js, canvas">Sketcher</a></p>
+		<p>A simple game is written using the library jquery  <a id="link" href="mausMuve.html" title="js, jquery">Rock Paper Scissors</a></p>
+		<p>A bot for the messenger that collects news on the API and posts them in telegrams <a id="link" href="https://t.me/joinchat/FArQ7hJh5gDQ30NcqRnklA" title="js, node.js">Telegram-bot</a></p>
+	   </section>
+  
+    
+	
+   </div>
+</div>
+  <div class="container-fluid" >
+     <section class="feedback_form ">
+      
+           
+    </section>
+  </div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js?v=0.7"></script>
+<script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+<script src="//cdn.jsdelivr.net/mojs/0.265.6/mo.min.js"></script>
+<script src="//cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript">
+	var app = angular.module('app', []);
+
+app.controller('mainController', function ($scope) {
+  var ctrl = this;
+
+  const innercircle = new mojs.Shape({
+    left: 0, top: 0,
+    radius: { 15: 0, easing: 'sin.in' },
+    scale: { 0: 1 },
+    fill: 'white',
+    stroke: 'none',
+    duration: 200,
+    delay: 0,
+    easing: 'spring.in',
+    opacity: 0.75
+  });
+  
+  const bubbles = new mojs.Burst({
+    left: 0, top: 0,
+    radius:   20,
+    count:    'rand(2,3)',
+    timeline: { delay: 100 },
+    children: {
+    stroke:       'white',
+    fill:         'none',
+    scale:        1,
+    strokeWidth:  { 4: 0 },
+    radius:       { 0 : 'rand(6, 10)' },
+    degreeShift:  'rand(-15, 15)',
+    duration:     250,
+    delay:        'rand(0, 250)',
+    opacity:    'rand(0.2,0.35)'
+    }
+  });
+  
+  const circle = new mojs.Shape({
+    left: 0, top: 0,
+    radius:       { 0: 16, easing: 'sin.out' },
+    fill:         'none',
+    stroke:       'white',
+    strokeWidth:  { 10: 0 },
+    duration:     150,
+    easing:       'cubic.out'
+  });
+  
+  const burst = new mojs.Burst({
+    left: 0,
+    top: 0,
+    radius:   { 0 : 22 },
+    count:    'rand(2,5)',
+    angle:    'rand(0,360)',
+    children: {
+    shape:        'circle',
+    radius:       6,
+      radiusX:    6,
+    fill:         'white',
+    duration:     '500',
+    degreeShift:  'rand(15, -15)',
+    duration:     'rand(1000, 2000)',
+    delay:        'stagger( rand(0, 50) )',
+    opacity:    'rand(0.15,0.4)',
+    easing:       'quint.out',
+    }
+  });
+  
+  const line_burst = new mojs.Burst({
+    left: 0, top: 0,
+    radius:   { 0: 25 },
+    count:  'rand(3,6)',
+    angle:  'rand(0, 360)',
+    children: {
+    shape:        'line',
+    stroke:       'white',
+    fill:         'none',
+    scale:        1,
+    scaleX:       { 1: 0 },
+    opacity:    'rand(0.25,0.6)',
+    degreeShift:  [ 'rand(15, -15)' ],
+    easing:       'quint.out',
+    delay:      'stagger( rand(0,35) )',
+    duration:     500
+    }
+  });
+  
+  angular.element(window).on('mousedown touchstart', function (e) {
+    var color = 'orange';
+    
+    if ($(e.target).hasClass('magic') || e.target.nodeName == 'svg') {
+      line_burst
+      .tune({ x: e.pageX, y: e.pageY, children: { stroke: color } })
+      .generate()
+      .replay();
+      circle
+      .tune({ x: e.pageX, y: e.pageY, stroke: color })
+      .replay();
+      bubbles
+      .tune({ x: e.pageX, y: e.pageY, children: { stroke: color } })
+      .generate()
+      .replay();
+      burst
+      .tune({ x: e.pageX, y: e.pageY, children: { fill: color } })
+      .generate()
+      .replay();
+      innercircle
+      .tune({ x: e.pageX, y: e.pageY, fill: color })
+      .replay();
+    }
+  });
+});
+</script>
+
+</body>
+</html>
+
