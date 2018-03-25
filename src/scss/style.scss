@@ -3,26 +3,21 @@
 
 body {
 
-  display:flex;
-  flex-direction: column;
+  
   font-family: lato, sans-serif;
   font-size: 16px;
   line-height: 1.2em;
-  height: 2000px;
+  
+  height: 100vh;
+  align-items: center;
  
 }
 
 
- body {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  
-
-} 
+ 
 
 
-.container {
+.container-fluid {
   
   margin: 0 auto;
   text-align: center;
@@ -140,8 +135,11 @@ p {
 }
 
 .my_work{
-  margin-top: 100px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  
 }
+
 
  /* 
     .container{
@@ -156,15 +154,15 @@ p {
   .nav_menu{
        
       
-       margin-top: 370px;
+       margin-top: 270px;
        width: 100%;
-       height: 50px;
+       height: 250px;
 
        
        
        
        a {
-
+        
         color: white;
         font: bold 1.3em/1.5 'Fjalla One', sans-serif;
         text-decoration: none;
@@ -177,13 +175,13 @@ p {
           a:hover {
             color: hotPink;
           }
-          @media (-webkit-min-device-pixel-ratio:0) {
+         
             a {
               background-color: white;
               background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
               background-position: 100% 0;
               background-size: 200% 200%;
-              color: transparent;
+              
               -webkit-transition: .1s .2s;
               -webkit-background-clip: text;
             }
@@ -213,15 +211,21 @@ p {
 
  .feedback_form{
    height: 600px;
-   background: #000;
+   background: #808080;
+
+   
+
  }
 
  li{
   list-style-type: none;
  }
 
- 
+ .about_me{
+  padding-bottom: 100px;
+ }
 
- 
- 
- 
+
+
+
+

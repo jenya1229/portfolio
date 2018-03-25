@@ -15,10 +15,10 @@
     </ul>
  <div class="nav container" >
  
- 	<ul class=" row   nav_menu link-effect-5 " ng-app="app" ng-controller="mainController as ctrl">
+ 	<ul class=" row  d-flex flex-column  nav_menu link-effect-5 " ng-app="app" ng-controller="mainController as ctrl">
  		<li class="col"><a id="link1" class="button button-2 magic" href="#">About me</a></li>
  		<li class="col"><a id="link1" class="button button-2 magic" href="#">My work</a></li>
- 		<li class="col"><a id="link1" class="button button-2 magic" href="#">Message to me</a></li>
+ 		
  		<li class="col"><a id="link1" class="button button-2 magic" href="#">Contacts</a></li>
  		<li class="col"><a id="link1" class="button button-2 magic" href="#">Blog</a></li>
  
@@ -29,15 +29,16 @@
  
 
 <div class="container-fluid ">
-<div class="container ">
+
 	
-	
+	<section class="about_me">
 	  <h1>Hi everyone, My name is <span>Eugene</span>, I'm a front-end developer</h1>
 	  <h2>Worked freelancing from 2015 to 2017</h2>
 	  <h4> Skills, html5/css3, bootstrap-4,
 	sass, gulp, npm, js(es5-es6), git.</h4> 
+  </section>
 	   <section class="my_work">
-	   	<h2>My works</h2>
+	   	<h1>My works</h1>
 	   	
 	   	<p>Adaptive website for pharmacy, using bootstrap  <a id="link" href="propapteca/index.html" title="Адаптивная верстка, css/html, bootstrap 4, js">Propapteca</a></p>
 	   
@@ -57,11 +58,15 @@
   
     
 	
-   </div>
+   
 </div>
   <div class="container-fluid" >
      <section class="feedback_form ">
-      
+        
+           
+         
+            
+          </form>
            
     </section>
   </div>
@@ -156,7 +161,7 @@ app.controller('mainController', function ($scope) {
     }
   });
   
-  angular.element(window).on('mousedown touchstart', function (e) {
+  angular.element(window).on('mousedown', function (e) {
     var color = 'orange';
     
     if ($(e.target).hasClass('magic') || e.target.nodeName == 'svg') {
