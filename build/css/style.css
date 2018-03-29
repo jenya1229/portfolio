@@ -233,14 +233,14 @@ li {
 }
 
 footer {
-  height: 600px;
-  background: #000;
+  height: 400px;
+  background: #2B2B2B;
 }
 
 footer .footer-social-links {
-  font-size: 50px;
+  font-size: 70px;
   text-align: center;
-  padding-top: 300px;
+  padding-top: 200px;
 }
 
 footer .footer-social-links a {
@@ -266,12 +266,9 @@ footer .footer-social-links a span {
 footer .footer-social-links a:before {
   content: "";
   display: inline-block;
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  border: 1px solid #fff;
   border-radius: 2px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -279,10 +276,103 @@ footer .footer-social-links a:before {
   transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
 }
 
-footer .footer-social-links a:hover {
-  color: #111;
+footer .fa-facebook :hover {
+  color: #3b5998;
+}
+
+footer .fa-github :hover {
+  color: #000;
+}
+
+footer .fa-telegram:hover {
+  color: #5682a3;
+}
+
+footer .fa-instagram:hover {
+  color: #c01768;
+}
+
+footer .fa-vk:hover {
+  color: #597da3;
 }
 
 footer .footer-social-links a:hover:before {
   background: #fff;
+}
+
+.devicon {
+  background: #2B2B2B;
+  border-radius: 10px;
+  margin: 25px 0;
+  height: 120px;
+}
+
+.devicon h2 {
+  color: #fff;
+}
+
+.devicon i {
+  margin: 0 5px 0 5px;
+  font-size: 50px  !important;
+  font-weight: 400;
+  color: #fff;
+}
+
+.devicon-react-original:hover {
+  color: #61DAFB;
+  cursor: pointer;
+}
+
+.devicon-nodejs-plain:hover {
+  color: #83CD29;
+  cursor: pointer;
+}
+
+.devicon-html5-plain:hover {
+  color: #E54D26;
+  cursor: pointer;
+}
+
+.devicon-sass-original:hover {
+  color: #CC6699;
+  cursor: pointer;
+}
+
+.devicon-css3-plain:hover {
+  color: #3D8FC6;
+  cursor: pointer;
+}
+
+.devicon-javascript-plain:hover {
+  color: #F0DB4F;
+  cursor: pointer;
+}
+
+.devicon-jquery-plain:hover {
+  color: #0769AD;
+  cursor: pointer;
+}
+
+.devicon-gulp-plain:hover {
+  color: #EB4A4B;
+  cursor: pointer;
+}
+
+.devicon-github-plain:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.devicon-bootstrap-plain:hover {
+  color: #563d7c;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .devicon {
+    background: #2B2B2B;
+    border-radius: 10px;
+    margin: 25px 0;
+    height: 200px;
+  }
 }

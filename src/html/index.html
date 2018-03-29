@@ -3,6 +3,7 @@
 <head>
 	@@include('./partials/_head.html')
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
  
 
@@ -17,11 +18,11 @@
     </ul>
  <div class="nav container" >
  
- 	<ul class=" row  d-flex flex-column  nav_menu link-effect-5 " ng-app="app" ng-controller="mainController as ctrl">
- 		<li class="col"><a id="link1" class="button button-2 magic" href="#">About me</a></li>
- 		<li class="col"><a id="link1" class="button button-2 magic" href="#">My work</a></li>
- 		<li class="col"><a id="link1" class="button button-2 magic" href="#">Blog</a></li>
- 		<li class="col"><a id="link1" class="button button-2 magic" href="#">Contacts</a></li>
+ 	<ul class=" row  d-flex flex-column  nav_menu link-effect-5 " ng-app="app" ng-controller="mainController as " >
+ 		<li class="col"><a id="link1" class="button button-2 magic" href="#about_me">About me</a></li>
+ 		<li class="col"><a id="link1" class="button button-2 magic" href="#my_work">My work</a></li>
+ 		<li class="col"><a id="link1" class="button button-2 magic" href="#blog">Blog</a></li>
+ 		<li class="col"><a id="link1" class="button button-2 magic" href="#contact">Contacts</a></li>
  		
  
  	</ul>
@@ -34,14 +35,31 @@
 
 	
 	<section class="about_me">
+   <a name="about_me"></a> 
 	  <h1>Hi everyone, My name is <span>Eugene</span>, I'm a front-end developer</h1>
     <h2>I live in Ukraine in the city Kryviy Rig</h2>
 	  <h2>Worked freelancing from 2015 to 2017</h2>
-	  <h4> Skills, html5/css3, bootstrap-4,
-	sass, gulp, npm, js(es5-es6), git.</h4>
-  <h4>At the moment I'm studying react, and I also like the technology of canvas and svg</h4>  
+    <h4>I have experience of commercial development of websites</h4>
+    <h4>At the moment I'm studying react, and I also like the technology of canvas and svg</h4> 
+
+  <div class="skills container">
+    <div class="devicon">
+         <h2>My skills</h2>
+            <i class="devicon-react-original" title="React"></i>
+            <i class="devicon-html5-plain" title="HTML"></i>
+            <i class="devicon-sass-original" title="Sass"></i>
+            <i class="devicon-css3-plain" title="CSS"></i>
+            <i class="devicon-javascript-plain" title="JavaScript"></i>
+            <i class="devicon-jquery-plain" title="jQuery"></i>
+            <i class="devicon-gulp-plain" title="Gulp"></i>
+            <i class="devicon-github-plain" title="GitHub"></i>
+            <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
+          </div>
+
+   </div> 
   </section>
-	   <section class="my_work">
+	   <section class="my_work" >
+      <a name="my_work"></a>
 	   	<h1>My works</h1>
 	   	
 	   	<p>Adaptive website for pharmacy, using bootstrap  <a id="link" href="propapteca/index.html" title="Адаптивная верстка, css/html, bootstrap 4, js">Propapteca</a></p>
@@ -66,13 +84,14 @@
 </div>
   <div class="container-fluid" >
      <section class="blog">
+       <a name="blog"></a>
          <div class="container">
            <div class="tile_post">
              <h2>My first blog post</h2>
            </div>
            <div>
 
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum reiciendis illo dolorem ipsum excepturi, natus pariatur ab, recusandae, asperiores autem aspernatur dolore minima placeat, tempore rerum numquam quas ratione! Eos ut molestias voluptate atque dolorum, necessitatibus error eaque distinctio fuga assumenda quibusdam repellat praesentium ab officiis doloribus quo, blanditiis consectetur culpa nam deleniti labore illum ea ratione! Aspernatur officia magnam, commodi enim repudiandae ex, expedita minus quibusdam inventore tenetur, voluptatibus. Quis sit, ut. Deserunt est illo dicta fugiat quasi illum temporibus commodi quae porro facere! Rem ratione reprehenderit cum suscipit illo quae consectetur mollitia aliquid aperiam, facere modi consequatur repellendus.  <a href="">   read more</a></p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum reiciendis illo dolorem ipsum excepturi, natus pariatur ab, recusandae, asperiores autem aspernatur dolore minima placeat, tempore rerum numquam quas ratione! Eos ut molestias   <a href="">   read more</a></p>
              <p class="date_post text-left">21.03.2017</p>
            </div>
          </div>
@@ -87,14 +106,15 @@
   </div>
   <div class="container-fluid">
     <footer>
+      <a name="contact"></a>
       <div class="footer-social-links">
-        <a href="https://www.facebook.com/jenyaglor.glor" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://github.com/jenya1229" title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
-        <a href="https://t.me/jecosik" title="Telegram" target="_blank"><i class="fa fa-telegram"></i></a>
-        <a href="#" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="#" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a>
-     </div>
-    
+        <a href="https://www.facebook.com/jenyaglor.glor" title="Facebook" target="_blank" class="fa-facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://github.com/jenya1229" title="GitHub" target="_blank" class="fa-github"><i class="fa fa-github"></i></a>
+        <a href="https://t.me/jecosik" title="Telegram" target="_blank" class=" fa-telegram"><i class="fa fa-telegram"></i></a>
+        <a href="https://www.instagram.com/evhen_puryk/?hl=ru" title="Instagram" target="_blank" class=" fa-instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://vk.com/uiiuiiu" title="Vk" target="_blank" class=" fa-vk"><i class="fa fa-vk"></i></a>
+     </div><br><br>
+    <p> © 2015–2017 Evhen Puryk</p>
     </footer>
 
   </div>
@@ -104,6 +124,20 @@
 <script src="//cdn.jsdelivr.net/mojs/0.265.6/mo.min.js"></script>
 <script src="//cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<script type="text/javascript">
+$(‘a[href*=#]’).bind(«click», function(e){
+var anchor = $(this);
+var name = anchor.attr(‘href’).replace(new RegExp(«#»,’gi’), »);
+$(‘html, body’).stop().animate({
+scrollTop: $(‘a[name=’+name+’]’).offset().top
+}, 2000);
+e.preventDefault();
+return false;
+});
+</script>
+
+
 <script type="text/javascript">
 	var app = angular.module('app', []);
 
@@ -214,7 +248,14 @@ app.controller('mainController', function ($scope) {
     }
   });
 });
+
+
+ 
+
+ 
 </script>
+
+
 
 </body>
 </html>
